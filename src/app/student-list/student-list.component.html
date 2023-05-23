@@ -1,0 +1,39 @@
+<h2> Student List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+          <th> ID</th>
+            <th> Name</th>
+            <th> Age</th>
+            <th> Date</th>
+            <th> Sex</th>
+            <th> Address</th>
+            <th> Student_id</th>
+            <th> SDT</th>
+            <th> Email</th>
+            <th> User_id</th>
+            <th> Major</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let student of students" >
+          <td> {{ student.id }} </td>
+            <td> {{ student.name }} </td>
+            <td> {{ student.age }} </td>
+            <td> {{ student.date }} </td>
+            <td> {{ student.sex }} </td>
+            <td> {{ student.address }} </td>
+            <td> {{ student.student_id }} </td>
+            <td> {{ student.sdt }} </td>
+            <td> {{ student.email }} </td>
+            <td> {{ student.user_id }} </td>
+            <td> {{ student.major }} </td>
+            <!-- <td>
+                <button (click) = "updateStudent(student.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteStudent(student.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "studentDetails(student.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td> -->
+        </tr>
+    </tbody>
+</table>
